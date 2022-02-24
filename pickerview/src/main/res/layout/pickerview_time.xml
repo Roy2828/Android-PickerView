@@ -8,6 +8,11 @@
         layout="@layout/include_pickerview_topbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/pickerview_topbar_height" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E6E7E8"
+        />
 
     <LinearLayout
         android:id="@+id/timepicker"
