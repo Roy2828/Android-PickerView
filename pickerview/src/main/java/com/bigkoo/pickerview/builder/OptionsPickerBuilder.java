@@ -118,6 +118,11 @@ public class OptionsPickerBuilder {
         return this;
     }
 
+    public OptionsPickerBuilder setTitleBgDrawable(int bgColorTitleDrawable){
+        mPickerOptions.bgColorTitleDrawable = bgColorTitleDrawable;
+        return this;
+    }
+
     public OptionsPickerBuilder setTitleColor(int textColorTitle) {
         mPickerOptions.textColorTitle = textColorTitle;
         return this;

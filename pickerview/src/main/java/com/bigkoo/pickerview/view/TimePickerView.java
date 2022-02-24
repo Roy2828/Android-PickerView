@@ -65,7 +65,12 @@ public class TimePickerView extends BasePickerView implements View.OnClickListen
             btnSubmit.setTextColor(mPickerOptions.textColorConfirm);
             btnCancel.setTextColor(mPickerOptions.textColorCancel);
             tvTitle.setTextColor(mPickerOptions.textColorTitle);
-            rv_top_bar.setBackgroundColor(mPickerOptions.bgColorTitle);
+            if(mPickerOptions.bgColorTitleDrawable == 0) {
+                rv_top_bar.setBackgroundColor(mPickerOptions.bgColorTitle);
+            }else{
+                rv_top_bar.setBackgroundResource(mPickerOptions.bgColorTitleDrawable);
+            }
+
 
             //设置文字大小
             btnSubmit.setTextSize(mPickerOptions.textSizeSubmitCancel);

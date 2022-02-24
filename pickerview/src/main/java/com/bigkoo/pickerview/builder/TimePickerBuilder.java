@@ -104,6 +104,12 @@ public class TimePickerBuilder {
         return this;
     }
 
+
+    public TimePickerBuilder setTitleBgDrawable(int bgColorTitleDrawable){
+        mPickerOptions.bgColorTitleDrawable = bgColorTitleDrawable;
+        return this;
+    }
+
     public TimePickerBuilder setTitleColor(int textColorTitle) {
         mPickerOptions.textColorTitle = textColorTitle;
         return this;

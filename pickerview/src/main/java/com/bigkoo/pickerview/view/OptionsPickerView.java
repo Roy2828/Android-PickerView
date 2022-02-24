@@ -26,6 +26,7 @@ public class OptionsPickerView<T> extends BasePickerView implements View.OnClick
     private static final String TAG_CANCEL = "cancel";
 
 
+
     public OptionsPickerView(PickerOptions pickerOptions) {
         super(pickerOptions.context);
         mPickerOptions = pickerOptions;
@@ -62,7 +63,13 @@ public class OptionsPickerView<T> extends BasePickerView implements View.OnClick
             btnSubmit.setTextColor(mPickerOptions.textColorConfirm);
             btnCancel.setTextColor(mPickerOptions.textColorCancel);
             tvTitle.setTextColor(mPickerOptions.textColorTitle);
-            rv_top_bar.setBackgroundColor(mPickerOptions.bgColorTitle);
+            if(mPickerOptions.bgColorTitleDrawable==0){
+                rv_top_bar.setBackgroundColor(mPickerOptions.bgColorTitle);
+            }else{
+                rv_top_bar.setBackgroundResource(mPickerOptions.bgColorTitleDrawable);
+            }
+
+
 
             //设置文字大小
             btnSubmit.setTextSize(mPickerOptions.textSizeSubmitCancel);
